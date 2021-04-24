@@ -712,11 +712,15 @@ nav {
   height: 50px;
   background: url("../images/round-web-icons-black-47-512.png") 50% 50%;
   background-size: 50px;
+  background-color: #f7f7f7;
   border: 0px;
   border-radius: 50%;
   z-index: 10; }
 
 @media screen and (max-width: 1300px) {
+  header {
+    height: auto;
+    width: auto; }
   .nav_fix {
     width: 100%;
     flex-shrink: 2; }
@@ -730,8 +734,8 @@ nav {
     flex-direction: column;
     justify-content: start;
     align-items: start; }
-    .team_parts .team_block {
-      margin-bottom: 30px; }
+  .team_block {
+    margin-bottom: 30px; }
   .container_fixer {
     padding-left: 200px;
     padding-right: 200px;
@@ -760,15 +764,18 @@ nav {
     padding-right: 100px; } }
 
 @media screen and (max-width: 360px) {
+  header {
+    height: auto;
+    width: auto; }
   #ad_but_menu {
     display: block; }
   .under_slogan1 {
-    font-size: 12px;
+    font-size: 10px;
     width: 100%; }
   .nav_wrap {
     display: none; }
   .slogan1 {
-    display: none; }
+    font-size: 14px; }
   .nav_wrap {
     flex-direction: row; }
   .feedback_wrap {
@@ -782,4 +789,45 @@ nav {
     padding-right: 10px;
     width: 100%; }
   .global_wrap {
-    padding: 0; } }
+    padding: 0; }
+  .header_count {
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 53px; }
+    .header_count div {
+      opacity: 0.50; }
+      .header_count div:first-child {
+        font-size: 20px;
+        text-decoration: line-through;
+        text-decoration-color: #4CAF50;
+        opacity: 1;
+        -webkit-text-decoration-color: #4CAF50;
+        -moz-text-decoration-color: #4CAF50; }
+  .triple_image {
+    display: none; }
+  .services_wrap {
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block; }
+  .block_titles {
+    width: 150px;
+    margin: 0 auto;
+    font-family: Oswald, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 2.30400013923645px;
+    line-height: 21px;
+    color: #333333; }
+  .block_parts {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    position: relative; }
+  .it_man_text {
+    width: auto;
+    padding: 10px; } }

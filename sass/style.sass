@@ -1,4 +1,4 @@
-@import "_part1.sass"
+
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap')
 
@@ -17,6 +17,11 @@
     height: 55px
   to
     height: auto
+
+
+
+
+
 body
   color: black
   margin: 0 0 0 0
@@ -111,8 +116,6 @@ nav
 .nav_fix
   width: 100%
   flex-shrink: 1
-
-//------------------------------------------
 
 .slogan_wrap1
   text-align: center
@@ -712,11 +715,6 @@ nav
         bottom: -5px
         left: 0
         padding: 5px
-
-
-
-
-
 #ad_but_menu
   position: fixed
   top: 0
@@ -727,77 +725,17 @@ nav
   height: 50px
   background: url("../images/round-web-icons-black-47-512.png") 50% 50%
   background-size: 50px
+  background-color: #f7f7f7
   border: 0px
   border-radius: 50%
   z-index: 10
 
 
+  
+  
+  
+  
+  
 
 
-// ------------------------------------------------- adaptive -----------------------------------------------//
-
-@media screen and (max-width: 1300px)
-  .nav_fix
-    width: 100%
-    flex-shrink: 2
-  .slogan1
-    font-size: 56px
-  .block_parts
-    flex-direction: column
-  .category_wrap
-    flex-direction: column
-  .team_parts
-    flex-direction: column
-    justify-content: start
-    align-items: start
-    .team_block
-      margin-bottom: 30px
-  .container_fixer
-    padding-left: 200px
-    padding-right: 200px
-    display: flex
-    align-items: center
-    flex-direction: column
-  .feedback_wrap
-    flex-direction: column
-    margin-top: 50px
-  #mail_block
-    margin-top: 30px
-@media screen and (max-width: 940px)
-  .slogan1
-    font-size: 36px
-  .nav_wrap
-    flex-direction: row
-  .feedback_wrap
-    flex-direction: column
-  .team_parts
-    flex-direction: column
-    justify-content: center
-    align-items: start
-  .container_fixer
-    padding-left: 100px
-    padding-right: 100px
-@media screen and (max-width: 360px)
-  #ad_but_menu
-    display: block
-  .under_slogan1
-    font-size: 12px
-    width: 100%
-  .nav_wrap
-    display: none
-  .slogan1
-    display: none
-  .nav_wrap
-    flex-direction: row
-  .feedback_wrap
-    flex-direction: column
-  .team_parts
-    flex-direction: column
-    justify-content: center
-    align-items: start
-  .container_fixer
-    padding-left: 10px
-    padding-right: 10px
-    width: 100%
-  .global_wrap
-    padding: 0
+@import "_adaptive.sass"
